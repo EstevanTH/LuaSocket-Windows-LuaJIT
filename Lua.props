@@ -8,12 +8,12 @@
     <LUAPLAT>$(Configuration)</LUAPLAT>
   </PropertyGroup>
   <PropertyGroup Label="UserMacros">
-    <LUAV>5.3</LUAV>
+    <LUAV>5.1</LUAV>
     <LUAPREFIX>z:\data\build\vc14\</LUAPREFIX>
-    <LUALIB>$(LUAPREFIX)\lib\lua\$(LUAV)\$(LUAPLAT)</LUALIB>
+    <LUALIB>..\LuaJIT\src</LUALIB>
     <LUACDIR>$(LUAPREFIX)\bin\lua\$(LUAV)\$(LUAPLAT)</LUACDIR>
     <LUALDIR>$(LUAPREFIX)\bin\lua\$(LUAV)\$(LUAPLAT)\lua</LUALDIR>
-    <LUAINC>$(LUAPREFIX)\include\lua\$(LUAV);$(LUAPREFIX)\include\lua$(LUAV)</LUAINC>
+    <LUAINC>..\LuaJIT\src;$(LUAPREFIX)\include\lua\$(LUAV);$(LUAPREFIX)\include\lua$(LUAV)</LUAINC>
     <LUALIBNAME>lua$(LUAV.Replace('.', '')).lib</LUALIBNAME>
   </PropertyGroup>
   <PropertyGroup>
